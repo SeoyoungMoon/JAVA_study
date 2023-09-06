@@ -5,6 +5,7 @@ import java.util.Scanner;
 /*
  * 2023.09.04
  * 문서영 실습
+ * chapter1 12강
  * Day3
  * */
 
