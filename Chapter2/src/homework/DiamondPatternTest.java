@@ -32,29 +32,70 @@ public class DiamondPatternTest {
 		System.out.println("다이아몬드의 높이를 입력하세요: ");
 		int height = scanner.nextInt();
 
-		int i;
-		int j;
-		int k;
+		int m;
+		int h;
+		int u;
 		//다이아몬드의 상단 부분 출력
-		for (i = 1; i <= height; i++) {
-			for (j = 1; j <= height - i; j++) {
+		for (m = 1; m <= height; m++) {
+			for (h = 1; h <= height - m; h++) {
 				System.out.print(" ");
 			}
-			for (k = 1; k <= 2 * i - 1; k++) {
+			for (u = 1; u <= 2 * m - 1; u++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
 		//다이아몬드의 하단 부분 출력
-		for (i = height - 1; i >= 1; i--) {
-			for (j = 1; j <= height - i; j++) {
+		for (m = height - 1; m >= 1; m--) {
+			for (h = 1; h <= height - m; h++) {
 				System.out.print(" ");
 			}
-			for (k = 1; k <= 2 * i -1; k++) {
+			for (u = 1; u <= 2 * m -1; u++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
+		
+		//----------------------------------찬뿡이가 만든 다이아몬드 START!!!---------------------------------------
+		
+		System.out.println("홀수를 입력하세요 : ");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String number = sc.next();
+		
+		int num = Integer.parseInt(number);
+		
+		int width = 1;
+		for(int i=1; i<num; i++) {
+			width += 2;
+		}
+		
+		String text = "";
+		int length = width;
+		for(int i=0; i<num*2-1; i++) {
+			 
+			String space = "";
+			String stars ="";
+			int spaceCnt = length/2;
+			for(int j=0;j<spaceCnt;j++) {
+				space += " ";
+			};
+			
+			for(int k=0;k<width-(spaceCnt*2); k++) {
+				stars += "*";
+			}
+			if(i>=num-1) {
+				length+=2;
+			}else {
+				length-=2;				
+			}
+			
+			text += space + stars + space +"\n";
+		}
+		
+		System.out.println(text);
+				
 
 	}
 

@@ -27,6 +27,21 @@ public class ForTest {
 			System.out.println();
 		}
 
+		//-------------------------------------------------------------------------------------------------
+		
+		System.out.println("-----------찬뿡이의 도움을 받아서 새로 작성-----------\n");
+		
+		for(dan=2; dan<=9; dan++) {
+			System.out.println("이번 " + dan + "단은 " + (dan) + "까지 곱한값까지만 출력됩니다");
+
+			for(num=1; num<=9; num++) {		
+				System.out.println(dan + " X " + num + " = " + dan*num);
+				if(dan == num) {
+					break;					
+				}
+			}
+			System.out.println();
+		}
 
 
 	}
