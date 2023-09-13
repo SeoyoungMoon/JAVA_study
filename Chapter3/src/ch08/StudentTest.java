@@ -22,6 +22,14 @@ public class StudentTest {
 		
 		studentLee.showStudentScore();
 		studentKim.showStudentScore();
+		
+//		studentKim.studentId = 55;			// 이렇게 학번을 새로 지정할 수 없는 이유는 Student클래스에서 학번을 프라이빗으로 막아뒀기 때문. 
+											// 학번을 가져오기 위해서 다른 메서드를 새로 만들어준거야. 
+		System.out.println(studentLee.getStudentId());
+		System.out.println(studentKim.getStudentId());
+		
+		studentKim.setStudentName("James");
+		studentKim.showStudentScore();
 	}
 
 }
