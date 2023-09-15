@@ -42,7 +42,11 @@ public class Employee {
 	}
 
 	public static int getSerialNum() {
-		return serialNum;
+		int i = 0;		//지역변수. 함수가 호툴될때 생겼다가 함수가 끝나면 사라져. 
+//		employeeName = "Lee";		//인스턴스 변수는 static메서드 내에서는 사용할 수 없어. 
+									//왜? static메서드는 인스턴스 생성과 상관없이 클래스 이름으로 바로 호출해서 사용하니까.
+									//단지 메모리 생성이 보장되지 않은 인스턴스 변수를 사용할 수 없는거.
+		return serialNum;	
 	}
 
 	public static void setSerialNum(int serialNum) {
