@@ -1,4 +1,4 @@
-package homework;
+package homework1;
 
 /*
  * 2023.09.20
@@ -7,7 +7,7 @@ package homework;
  * Day14
  * */
 
-public class StarCoffee {
+public class BeanCoffee {
 	
 	int money;
 	
@@ -15,10 +15,10 @@ public class StarCoffee {
 		
 		this.money += money;
 		
-		if(money == Menu.STARAMERICANO) {
-			return "별다방 아메리카노를 구입했습니다.";
-		} else if(money == Menu.STARLATTE) {
-			return "별다방 라떼를 구입했습니다.";
+		if(money == Menu.BEANAMERICANO) {
+			return "콩다방 아메리카노를 구입했습니다.";
+		} else if(money == Menu.BEANLATTE) {
+			return "콩다방 라떼를 구입했습니다.";
 		} else return null;
 	}
 
