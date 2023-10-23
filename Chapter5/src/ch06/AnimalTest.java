@@ -98,8 +98,8 @@ public class AnimalTest {
 			
 			Animal animal = animalList.get(i);
 			
-			if(animal instanceof Human) {
-				Human human = (Human)animal;
+			if(animal instanceof Human) {		//instanceof라는 키워드로 인스턴스 형이 맞는지 여부를 체크해. 맞으면 true, 다르면 false를 반환
+				Human human = (Human)animal;	//다운캐스팅 하는 방법은 이거야. 
 				human.readBooks();
 			} else if(animal instanceof Tiger) {
 				Tiger tiger = (Tiger)animal;
