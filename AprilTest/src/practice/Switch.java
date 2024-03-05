@@ -2,8 +2,8 @@ package practice;
 
 /*
  * 2024.03.05
- * 정보처리기사 실기 공부 C언어
- * switch문
+ * 정보처리기사 실기 공부 C언어 
+ * doWhile문
  * Day1
  * */
 
